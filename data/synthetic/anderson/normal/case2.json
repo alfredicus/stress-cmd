@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "type": "extension fracture",
+        "strike": 45,
+        "dip": 90,
+        "dipDirection": "SE",
+        "normal": [-0.707106781186548, 0.707106781186548, 0]
+    },
+    {
+        "id": 2,
+        "type": "Extension Fracture",
+        "strike": 225,
+        "dip": 90,
+        "dipDirection": "N",
+        "normal": [0.707106781186548, -0.707106781186548, 0]
+    },
+    {
+        "id": 3,
+        "type": "Stylolite Interface",
+        "strike": 50,
+        "dip": 0,
+        "dipDirection": "N",
+        "normal": [0, 0, 1]
+    },
+    {
+        "id": 4,
+        "type": "Stylolite Interface",
+        "strike": 350,
+        "dip": 0,
+        "dipDirection": "N",
+        "normal": [0, 0, 1]
+    },
+    {
+        "id": 5,
+        "type": "Striated Plane",
+        "strike": 45,
+        "dip": 60,
+        "dipDirection": "NW",
+        "rake": 90,
+        "strikeDirection": "SW",
+        "typeOfMovement": "N",
+        "normal": [-0.612372435695795, 0.612372435695795, 0.5]
+    },
+    {
+        "id": 6,
+        "type": "Striated Plane",
+        "strike": 225,
+        "dip": 60,
+        "dipDirection": "W",
+        "rake": 90,
+        "strikeDirection": "N",
+        "typeOfMovement": "N",
+        "normal": [-0.612372435695795, 0.612372435695795, 0.5]
+    },
+    {
+        "id": 7,
+        "type": "Striated Plane",
+        "strike": 135,
+        "dip": 30,
+        "dipDirection": "SW",
+        "rake": 90,
+        "strikeDirection": "SE",
+        "typeOfMovement": "N",
+        "normal": [-0.353553390593274, -0.353553390593274, 0.866025403784439]
+    },
+    {
+        "id": 8,
+        "type": "Striated Plane",
+        "strike": 315,
+        "dip": 30,
+        "dipDirection": "W",
+        "rake": 90,
+        "strikeDirection": "N",
+        "typeOfMovement": "N",
+        "normal": [-0.353553390593274, -0.353553390593274, 0.866025403784439]
+    },
+    {
+        "id": 9,
+        "type": "Striated Plane",
+        "strike": 75,
+        "dip": 90,
+        "dipDirection": "NW",
+        "rake": 0,
+        "strikeDirection": "SW",
+        "typeOfMovement": "LL",
+        "normal": [-0.258819045102521, 0.965925826289068, 0]
+    },
+    {
+        "id": 10,
+        "type": "Striated Plane",
+        "strike": 255,
+        "dip": 90,
+        "dipDirection": "N",
+        "rake": 0,
+        "strikeDirection": "S",
+        "typeOfMovement": "LL",
+        "normal": [0.258819045102521, -0.965925826289068, 0]
+    },
+    {
+        "id": 11,
+        "type": "Striated Plane",
+        "strike": 90,
+        "dip": 54.7356,
+        "dipDirection": "S",
+        "rake": 60,
+        "strikeDirection": "E",
+        "typeOfMovement": "N_LL",
+        "normal": [ 0, -0.816496580927726, 0.577350269189626]
+    },
+    {
+        "id": 12,
+        "type": "Striated Plane",
+        "strike": 270,
+        "dip": 54.7356,
+        "dipDirection": "S",
+        "rake": 60,
+        "strikeDirection": "E",
+        "typeOfMovement": "N_LL",
+        "normal": [ 0, -0.816496580927726, 0.577350269189626]
+    }
+]

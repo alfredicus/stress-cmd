@@ -1,0 +1,13 @@
+{
+    "name": "@alfredo-taboada/stress-cmd",
+    "version": "0.1.0",
+    "description": "Stress inversion",
+    "author": "",
+    "keywords": [],
+    "scripts": {},
+    "dependencies": {
+        "@alfredo-taboada/stress": "^0.1.0",
+        "@youwol/math": "^0.1.0",
+        "commander": "^12.0.0"
+    }
+}
