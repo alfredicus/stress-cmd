@@ -6,7 +6,6 @@
     "keywords": [],
     "scripts": {},
     "dependencies": {
-        "@alfredo-taboada/stress": "^0.1.0",
         "@youwol/math": "^0.1.0",
         "commander": "^12.0.0"
     }
