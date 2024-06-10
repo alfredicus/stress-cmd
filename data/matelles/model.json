@@ -1,0 +1,27 @@
+{
+    "dataset": [
+        {
+            "file": "stylos/stylolites-1.json",
+            "weight": 0.83
+        },
+        {
+            "file": "veins/veins-1.json",
+            "weight": 0.12,
+            "active": true
+        },
+        {
+            "file": "veins/veins-2.json",
+            "weight": 1
+        }
+    ],
+    "options": {
+        "searchMethod": {
+            "name": "Monte Carlo",
+            "nbIter": 50000
+        },
+        "stressRatio": {
+            "min": 0.7,
+            "max": 0.9
+        }
+    }
+}

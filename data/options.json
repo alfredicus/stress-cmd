@@ -1,6 +1,0 @@
-{
-    "searchMethod": {
-        "name": "Monte Carlo",
-        "nbIter": 50000
-    }
-}
