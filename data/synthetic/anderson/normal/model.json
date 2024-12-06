@@ -1,0 +1,22 @@
+{
+    "dataset": [
+        {
+            "file": "stries.json",
+            "weight": 1
+        },
+        {
+            "file": "stylolites.json",
+            "weight": 1
+        },
+        {
+            "file": "veins.json",
+            "weight": 1
+        }
+    ],
+    "options": {
+        "searchMethod": {
+            "name": "Monte Carlo",
+            "nbIter": 50000
+        }
+    }
+}

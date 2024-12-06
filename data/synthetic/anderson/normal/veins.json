@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "type": "extension fracture",
+        "strike": 45,
+        "dip": 90,
+        "dipDirection": "SE",
+        "normal": [-0.707106781186548, 0.707106781186548, 0]
+    },
+    {
+        "id": 2,
+        "type": "Extension Fracture",
+        "strike": 225,
+        "dip": 90,
+        "dipDirection": "N",
+        "normal": [0.707106781186548, -0.707106781186548, 0]
+    }
+]

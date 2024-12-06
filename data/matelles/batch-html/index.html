@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <script src="../../../../stress/dist/@alfredo-taboada/stress.js"></script>
+</head>
+
+<body>
+    <input type="file" id="file-input" />
+    <h3>Files:</h3>
+    <pre id="files"></pre>
+    <br><br>
+    <button>Run</button>
+    <h3>Result:</h3>
+    <div id="result" style="white-space:pre"></div>
+
+    <script>
+
+        const dataset = []
+        const filenames = []
+
+        function appendFile(filename) {
+            filenames.push(filename)
+            var element = document.getElementById('files')
+            element.innerHTML = '<ul>' + filenames.reduce( (prev, cur) => prev + `<li> ${cur}`, '') + '</ul>'
+        }
+
+        function displayResult(content) {
+            var element = document.getElementById('result')
+            element.innerHTML += `<div>${content}</div>`
+        }
+
+        const STRESS = window['@alfredo-taboada/stress']
+
+        function setOption(runner) {
+            runner.setOptions({
+                searchMethod: {
+                    name: "Monte Carlo",
+                    nbIter: 50000
+                }
+            })
+        }
+
+        function addDataset(dataset, runner) {
+            const jsonData = dataset.content
+            let count = 0
+
+            if (dataset.weight !== 0 && dataset.active) {
+                count += runner.addDataset({
+                    buffer: jsonData,
+                    fileExtension: 'json',
+                    weight: dataset.weight,
+                    filename: dataset.file
+                })
+            }
+        }
+
+        function readSingleFile(e) {
+            const file = e.target.files[0]
+            if (!file) {
+                return
+            }
+
+            appendFile(file.name)
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                const content = e.target.result;
+                dataset.push({
+                    file: file,
+                    content,
+                    weight: 1,
+                    active: true
+                })
+            }
+            reader.readAsText(file)
+        }
+
+        document.getElementById('file-input').addEventListener('change', readSingleFile, false)
+
+        const button = document.querySelector("button");
+        button.addEventListener("click", (event) => {
+            run()
+        })
+
+        function run() {
+            const N = 10
+
+            for (let i = 0; i < N; ++i) {
+                const w1 = Math.random()
+                const w2 = 1 - w1
+
+                const runner = new STRESS.Runner()
+                setOption(runner)
+
+                dataset.forEach(d => {
+                    addDataset(d, runner)
+                })
+
+                const solution = runner.run()
+                console.log(`${i}: ${solution.fit}`)
+                displayResult(`<br><h4>${i}: ${solution.fit}</h4>`)
+            }
+        }
+    </script>
+</body>
+
+</html>
